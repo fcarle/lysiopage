@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyiso Admin - New Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="admin-page">
+
+    <div id="password-protection">
+        <div class="admin-login-box">
+            <h2>Admin Access</h2>
+            <p>Please enter the password to create a new post.</p>
+            <input type="password" id="password-input" placeholder="Password...">
+            <button id="password-submit">Authenticate</button>
+            <p id="password-error" style="display: none; color: #d9534f;">Incorrect password.</p>
+        </div>
+    </div>
+
+    <main id="admin-content" style="display: none;">
+        <header>
+            <nav>
+                <div class="logo">Lyiso - Blog Publisher</div>
+            </nav>
+        </header>
+        <section>
+            <h2>Create New Blog Post</h2>
+            <form id="blog-post-form" class="admin-form">
+                <input type="text" id="post-title" placeholder="Blog Post Title" required>
+                <textarea id="post-content" placeholder="Write your blog post here. You can use basic HTML tags like <b>, <i>, <p>, <a>." rows="15"></textarea>
+                <input type="text" id="post-author" placeholder="Author Name" required>
+                <button type="submit">Publish Post</button>
+            </form>
+        </section>
+        <div id="publish-status"></div>
+    </main>
+    
+    <script src="admin.js"></script>
+</body>
+</html> 

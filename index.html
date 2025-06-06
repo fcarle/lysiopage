@@ -3,61 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyiso - Software Development & AI Solutions</title>
+    <title>Lyiso - Architecting the Future with AI</title>
+    <link id="favicon" rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="spaceman">
+        <div class="speech-bubble"></div>
+        <div class="portal"></div>
+    </div>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
     <header>
         <nav>
             <div class="logo">Lyiso</div>
             <ul>
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">AI Solutions</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tech-core">Technology</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="hero">
+            <div id="hero-background"></div>
             <div class="hero-content">
-                <h1>Pioneering Solutions for a Digital World</h1>
-                <p>Lyiso delivers cutting-edge software development and AI implementation for global enterprises and government entities.</p>
-                <a href="#contact" class="cta-button">Partner With Us</a>
+                <h1 id="typewriter"></h1>
+                <p>We empower businesses by integrating cutting-edge Artificial Intelligence, turning complex challenges into impactful, data-driven solutions.</p>
+                <a href="#solutions" class="cta-button">Explore AI Solutions</a>
             </div>
         </section>
 
-        <section id="services">
-            <h2>Our Expertise</h2>
+        <section id="solutions">
+            <h2>Our AI Implementation Services</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <h3>Custom Software Development</h3>
-                    <p>Tailored software solutions to meet the unique challenges of your organization, from enterprise applications to specialized government platforms.</p>
+                    <h3>AI Strategy Consulting</h3>
+                    <p>We help you identify the most valuable AI opportunities in your business and create a roadmap for successful implementation and growth.</p>
                 </div>
                 <div class="service-item">
-                    <h3>AI Implementation & Integration</h3>
-                    <p>Leveraging artificial intelligence to optimize processes, gain insights, and drive innovation for large-scale operations.</p>
+                    <h3>Custom AI Model Development</h3>
+                    <p>Our experts design and build bespoke AI models tailored to your unique data and business objectives, from predictive analytics to natural language processing.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Advanced Frontend Development</h3>
-                    <p>Crafting intuitive, high-performance user interfaces for complex systems, ensuring seamless user experiences.</p>
+                    <h3>AI-Powered Automation</h3>
+                    <p>Streamline your operations, reduce costs, and increase efficiency by automating complex workflows and processes with intelligent systems.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Government & Enterprise Solutions</h3>
-                    <p>Specialized in delivering robust and secure software solutions for public sector and large corporate clients worldwide.</p>
+                    <h3>Data Analytics & Insights</h3>
+                    <p>Unlock the hidden potential in your data. We implement AI solutions that provide deep insights, predictive forecasting, and a competitive edge.</p>
+                </div>
+                <div class="service-item">
+                    <h3>AI Integration & Deployment</h3>
+                    <p>Our engineers ensure that your new AI capabilities are seamlessly integrated into your existing infrastructure for scalable and robust performance.</p>
+                </div>
+                <div class="service-item">
+                    <h3>AI Ethics & Governance</h3>
+                    <p>We help you navigate the complexities of AI ethics, creating transparent, fair, and accountable systems that build trust and ensure compliance.</p>
                 </div>
             </div>
+        </section>
+        
+        <section id="use-cases">
+            <h2>AI in Action: Industry Applications</h2>
+            <div class="use-cases-grid">
+                <!-- Card 1: Finance -->
+                <div id="use-case-finance" class="use-case-card info-modal-trigger"
+                     data-icon="🚀"
+                     data-title="Finance & Banking"
+                     data-description="Our advanced AI models power algorithmic trading platforms by analyzing market data in real-time to execute high-frequency trades. We build adaptive fraud detection systems that learn from new threats instantly, protecting assets and reducing false positives. For customers, we create personalized financial advisory bots that offer tailored investment advice, budget planning, and portfolio management, significantly enhancing customer engagement and value.">
+                    <div class="use-case-icon">🚀</div>
+                    <h3>Finance & Banking</h3>
+                    <p>We deploy AI for algorithmic trading, real-time fraud detection that learns from new threats, and personalized financial advisory services.</p>
+                </div>
+
+                <!-- Card 2: Healthcare -->
+                <div id="use-case-healthcare" class="use-case-card info-modal-trigger"
+                     data-icon="❤️"
+                     data-title="Healthcare"
+                     data-description="We partner with medical institutions to accelerate drug discovery through predictive modeling of compound efficacy, drastically reducing research and development time. Our medical image analysis tools assist radiologists and pathologists by identifying subtle anomalies in X-rays, MRIs, and scans with superhuman accuracy. In hospitals, our AI optimizes resource allocation, predicting patient flow and bed availability to improve operational efficiency and patient outcomes.">
+                    <div class="use-case-icon">❤️</div>
+                    <h3>Healthcare</h3>
+                    <p>Our solutions accelerate drug discovery with predictive modeling, improve diagnostic accuracy via medical image analysis, and optimize hospital resources.</p>
+                </div>
+
+                <!-- Card 3: Retail -->
+                <div id="use-case-retail" class="use-case-card info-modal-trigger"
+                     data-icon="🛒"
+                     data-title="Retail & E-commerce"
+                     data-description="We build hyper-personalized customer journeys by leveraging AI recommendation engines that understand user intent and behavior. Our systems automate warehouse logistics, from smart inventory management to robotic pick-and-pack processes. Furthermore, we provide deep market insights by deploying sentiment analysis on social media and customer reviews, giving businesses a real-time understanding of brand perception and consumer trends.">
+                    <div class="use-case-icon">🛒</div>
+                    <h3>Retail & E-commerce</h3>
+                    <p>We create hyper-personalized customer journeys with AI recommendation engines, automate warehouse logistics, and provide deep insights into market trends.</p>
+                </div>
+
+                <!-- Card 4: Manufacturing -->
+                <div id="use-case-manufacturing" class="use-case-card info-modal-trigger"
+                     data-icon="🤖"
+                     data-title="Manufacturing"
+                     data-description="Our AI solutions implement predictive maintenance by analyzing sensor data from machinery to forecast failures before they happen, eliminating costly downtime. We deploy computer vision systems on production lines for flawless, automated quality control, identifying microscopic defects at high speed. The entire production line is optimized with AI, from supply chain intake to final output, ensuring peak efficiency and minimal waste.">
+                    <div class="use-case-icon">🤖</div>
+                    <h3>Manufacturing</h3>
+                    <p>Implement predictive maintenance to eliminate downtime, use computer vision for flawless quality control, and optimize the entire production line.</p>
+                </div>
+
+                <!-- Card 5: Logistics -->
+                <div id="use-case-logistics" class="use-case-card info-modal-trigger"
+                     data-icon="🚚"
+                     data-title="Logistics & Supply Chain"
+                     data-description="Leverage our AI for dynamic route optimization that adjusts to traffic, weather, and delivery priority in real-time, saving fuel and time. We provide highly accurate demand forecasting models that prevent stockouts and reduce excess inventory. Our intelligent warehouse automation solutions orchestrate robotic systems and human workers for a resilient, efficient, and fully transparent supply chain.">
+                    <div class="use-case-icon">🚚</div>
+                    <h3>Logistics & Supply Chain</h3>
+                    <p>Leverage AI for dynamic route optimization, accurate demand forecasting, and intelligent warehouse automation to create a resilient supply chain.</p>
+                </div>
+
+                <!-- Card 6: Energy -->
+                <div id="use-case-energy" class="use-case-card info-modal-trigger"
+                     data-icon="💡"
+                     data-title="Energy & Utilities"
+                     data-description="We utilize AI for predictive grid maintenance, analyzing infrastructure data to prevent outages before they occur. Our smart energy consumption platforms help consumers and businesses optimize their usage, reducing costs and environmental impact. For renewables, we improve the accuracy of wind and solar energy forecasting, enabling better integration into the power grid and building a more sustainable energy future.">
+                    <div class="use-case-icon">💡</div>
+                    <h3>Energy & Utilities</h3>
+                    <p>We utilize AI for predictive grid maintenance, smart energy consumption optimization, and improving the accuracy of renewable energy forecasting.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Our Portfolio of Innovation</h2>
+            <div class="project-grid-container">
+                <div class="project-card info-modal-trigger" 
+                     id="project-spaceman-guide"
+                     data-title="Interactive AI Site Guardian"
+                     data-status="Completed"
+                     data-status-class="completed"
+                     data-image="url('assets/images/walkdown.png')"
+                     data-description="An engaging, interactive AI character that acts as a site guardian and tour guide. The spaceman roams the page, provides contextual commentary on viewed content, shares random facts to keep users engaged, and teleports around the screen with a custom portal effect. This project showcases how to create a more dynamic and personalized user experience."
+                     data-tags="Interactive UI,Character AI,JavaScript,User Engagement">
+                    <div class="project-card-image" style="background-image: url('assets/images/walkdown.png'); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #0f121a;">
+                        <!-- Static image -->
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Interactive AI Site Guardian</h3>
+                        <span class="project-card-status completed">Completed</span>
+                    </div>
+                </div>
+
+                <div class="project-card info-modal-trigger" 
+                     id="project-tabtitle"
+                     data-title="TabTitle.io: Browser Tab Engagement"
+                     data-status="Completed"
+                     data-status-class="completed"
+                     data-image="url('assets/images/tabtitle.io.png')"
+                     data-description="TabTitle.io is a powerful SaaS platform designed to re-engage users by transforming browser tabs into dynamic marketing tools. It leverages user psychology with animated favicons and timely title updates to reduce cart abandonment, recover distracted visitors, and boost conversion rates. This project demonstrates expertise in creating non-intrusive, high-impact user engagement solutions."
+                     data-tags="SaaS,User Engagement,Marketing Tech,JavaScript">
+                    <div class="project-card-image" style="background-image: url('assets/images/tabtitle.io.png'); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #0f121a;">
+                        <!-- Static image -->
+                    </div>
+                    <div class="project-card-content">
+                        <h3>TabTitle.io: Browser Tab Engagement</h3>
+                        <span class="project-card-status completed">Completed</span>
+                    </div>
+                </div>
+
+                <div class="project-card info-modal-trigger" 
+                     id="project-accflow"
+                     data-title="AccFlow: AI-Powered Practice Management"
+                     data-status="Completed"
+                     data-status-class="completed"
+                     data-image="url('assets/images/accflow.org.png')"
+                     data-description="An all-in-one practice management platform for accountants, AccFlow streamlines client workflows and automates deadlines. Its core feature is a lead-generation engine that connects directly to the UK's Companies House API, proactively identifying local businesses in need of accounting services."
+                     data-tags="SaaS,Fintech,Accounting,Lead Generation,API">
+                    <div class="project-card-image" style="background-image: url('assets/images/accflow.org.png'); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #0f121a;">
+                        <!-- Static image -->
+                    </div>
+                    <div class="project-card-content">
+                        <h3>AccFlow: AI-Powered Practice Management</h3>
+                        <span class="project-card-status completed">Completed</span>
+                    </div>
+                </div>
+
+                <div class="project-card info-modal-trigger" 
+                     id="ai-comparison-project"
+                     data-animation="ai-dots"
+                     data-title="Comparing AI Models Through Simulation"
+                     data-status="In Development"
+                     data-status-class="in-development"
+                     data-image="linear-gradient(45deg, #43cea2, #185a9d)"
+                     data-description="This research explores how different AI models (like OpenAI, DeepSeek, Claude, and Llama) reason and adapt in a simple simulated world. By observing their interactions, we aim to understand their unique biases, compare their problem-solving approaches, and evaluate their suitability for specific tasks, providing key insights for AI governance and the integration of new technologies like zero-reasoning AI."
+                     data-tags="Model Comparison,AI Ethics,Simulation,Zero-Reasoning AI">
+                    <div id="ai-dot-animation-container" class="project-card-image">
+                        <!-- AI dots will be injected here by JS -->
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Comparing AI Models Through Simulation</h3>
+                        <span class="project-card-status in-development">In Development</span>
+                    </div>
+                </div>
+
+                <div class="project-card info-modal-trigger" 
+                     id="project-righthand"
+                     data-animation="righthand-tutor"
+                     data-title="Righthand: Adaptive AI Tutor"
+                     data-status="In Development"
+                     data-status-class="in-development"
+                     data-description="Righthand is an adaptive AI tutor designed to revolutionize learning. Operating as a desktop or browser assistant, it analyzes any highlighted text and re-explains it based on the user's unique profile. By allowing students to choose from familiar domains (like sports or music) and preferred learning styles (from simple analogies to step-by-step breakdowns), Righthand makes complex topics instantly accessible and easier to retain."
+                     data-tags="AI Education,Personalized Learning,Chrome Extension,Adaptive AI">
+                    <div id="righthand-animation-container" class="project-card-image">
+                        <!-- Righthand animation will be injected here -->
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Righthand: Adaptive AI Tutor</h3>
+                        <span class="project-card-status in-development">In Development</span>
+                    </div>
+                </div>
+
+                <div class="project-card info-modal-trigger" 
+                     id="project-chronos"
+                     data-animation="chronos-causality"
+                     data-title="Project Chronos: Temporal Causality Engine"
+                     data-status="Conceptual Phase"
+                     data-status-class="in-development"
+                     data-description="Project Chronos is a predictive intelligence engine that transcends linear forecasting. By simulating complex feedback loops and identifying latent variables in global data streams, it models the long-term, cascading impacts of key events. This offers unprecedented foresight in strategic decision-making, risk management, and opportunity analysis."
+                     data-tags="Predictive Intelligence,Causal Inference,Systems Modeling,Long-Term Forecasting">
+                    <div id="chronos-animation-container" class="project-card-image">
+                        <!-- Chronos animation will be injected here -->
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Project Chronos: Temporal Causality Engine</h3>
+                        <span class="project-card-status in-development">Conceptual Phase</span>
+                    </div>
+                </div>
+
+                <div class="project-card info-modal-trigger" 
+                     id="project-reasoning-comparison"
+                     data-title="Zero-Reasoning vs. Reasoning-Based AI"
+                     data-animation="reasoning-comparison"
+                     data-status="In Development"
+                     data-status-class="in-development"
+                     data-image="linear-gradient(45deg, #c31432, #240b36)"
+                     data-description="This project critically compares the efficacy of zero-reasoning AI against traditional reasoning models. We simulate complex scenarios to determine when pattern-based inference excels versus deep, logical reasoning, providing a framework for selecting the right AI for high-stakes tasks in policy, ethics, and adaptive problem-solving."
+                     data-tags="Zero-Reasoning AI,Ethical AI,Model Comparison,Cognitive Architecture">
+                    <div id="reasoning-comparison-container" class="project-card-image">
+                        <!-- New animation will be injected here -->
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Zero-Reasoning vs. Reasoning-Based AI</h3>
+                        <span class="project-card-status in-development">In Development</span>
+                    </div>
+                </div>
+
+                <!-- Summary Card -->
+                <a href="#contact" class="project-summary-card">
+                    <h3>50+ Successful Projects</h3>
+                    <p>We have successfully delivered over 50 projects for a diverse range of clients, from innovative startups to government agencies and large-scale enterprise partners.</p>
+                    <span class="cta-link">Contact us to learn more &rarr;</span>
+                </a>
+            </div>
+
+            <div class="newsletter-signup-container">
+                <h3>Stay on the Bleeding Edge</h3>
+                <p>Join our confidential newsletter to receive exclusive updates on our research, including insights from projects not shared publicly.</p>
+                <form id="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email address..." required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="tech-core">
+            <h2>Our Core Technology</h2>
+            <div class="network-container">
+                <svg id="neural-network" width="100%" height="100%" viewBox="0 0 800 400">
+                    <!-- This will be populated with nodes and connections by JS -->
+                </svg>
+            </div>
+            <p class="tech-description">At the heart of Lyiso is a powerful, proprietary framework for developing and deploying scalable AI. Our technology is built on a foundation of cutting-edge research, ensuring our solutions are not just effective, but are shaping the future of intelligent systems.</p>
         </section>
 
         <section id="about">
-            <h2>About Lyiso</h2>
-            <p>Lyiso is a premier technology partner for leading corporations and government bodies worldwide. We specialize in developing sophisticated software solutions and integrating advanced AI technologies to address complex challenges and drive digital transformation. Our team comprises industry experts with deep knowledge in software architecture, artificial intelligence, and user-centric design, enabling us to deliver high-impact solutions that are both innovative and reliable. We are committed to excellence and building long-term partnerships based on trust and a shared vision for technological advancement.</p>
+            <h2>Pioneers in Applied AI</h2>
+            <p>Lyiso was founded on the principle that Artificial Intelligence is not a distant future technology, but a powerful tool that can transform businesses today. Our mission is to demystify AI and make it accessible and impactful for companies across industries. Our team of data scientists, AI specialists, and engineers work collaboratively with you to integrate intelligence into the very core of your operations, ensuring that your business not only keeps pace with innovation but leads it.</p>
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
-            <p style="font-weight: bold; color: #d9534f;">Important Notice: We are currently dedicated to ongoing projects and will not be initiating new partnerships until next year. Existing clients, please continue to liaise with your designated point of contact for all inquiries.</p>
+            <h2>Start Your AI Transformation</h2>
+            <p>Have a project in mind or want to learn more about our work? Fill out the form below, and our team will get back to you shortly.</p>
+            <form id="contact-form" class="contact-form-container">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="company" placeholder="Your Company (Optional)">
+                </div>
+                <div class="form-row">
+                    <textarea name="message" placeholder="How can we help you?" rows="7" required></textarea>
+                </div>
+                <button type="submit">Send Inquiry</button>
+            </form>
+            <div id="contact-form-status"></div>
         </section>
     </main>
 
@@ -65,6 +318,28 @@
         <p>&copy; 2024 Lyiso. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
     </footer>
 
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close-btn">&times;</button>
+            <div id="modal-project-image" class="modal-project-image"></div>
+            <div class="modal-project-content">
+                <span id="modal-project-status" class="project-status"></span>
+                <h3 id="modal-project-title"></h3>
+                <p id="modal-project-description"></p>
+                <div id="modal-project-tags" class="project-tags"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
+    
+    <button id="cursor-toggle-btn" title="Toggle Custom Cursor">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path>
+        </svg>
+    </button>
 </body>
 </html> 
